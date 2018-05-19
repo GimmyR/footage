@@ -1,0 +1,31 @@
+<div class="container simple-plan section-content">
+	<div class="row">
+		<div class="col-md-12 label-simple-plan margin-auto">
+			<h5 class="center-text"><span class="underline">Plan de remboursement</span> : Reste a planifier : {{reste}}</h5>
+		</div>
+		<div class="col-md-4 table-simple-plan margin-auto">
+			<table class="table table-bordered">
+				<tr>
+					<th>Date de remboursement</th>
+					<th>Montant</th>
+				</tr>
+				<tr ng-repeat="item in remboursements">
+					<td>{{item.dateRemboursement}}</td>
+					<td>{{item.montant}}</td>
+				</tr>
+			</table>
+			<div class="col-md-6 margin-auto div-btn-simple-plan-planifier">
+				<button ng-click="planifier()" class="btn btn-simple-plan-planifier form-control">Valider</button>
+			</div>
+		</div>
+		<div class="col-md-12 div-simple-plan margin-auto">
+			<form class="form-inline simple-plan-form margin-auto">
+				<div class="margin-auto">
+					<input type="date" class="form-control center-text" ng-model="remboursement.dateRemboursement">
+					<input type="number" class="form-control center-text" placeholder="Nombre de jetons" min="0" step="1" ng-model="remboursement.montant">
+					<button ng-click="ajouter()" class="btn btn-simple-plan-ajouter form-control">Ajouter</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

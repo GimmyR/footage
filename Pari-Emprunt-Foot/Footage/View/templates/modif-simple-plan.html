@@ -1,0 +1,18 @@
+<div class="container modif-simple-plan section-content">
+	<div class="row">
+		<div class="col-md-12 label-modif-simple-plan margin-auto">
+			<h5 class="center-text"><span class="underline">Plan de remboursement</span> :</h5>
+		</div>
+		<div class="col-md-6 div-modif-simple-plan margin-auto">
+			<form class="form-inline modif-simple-plan-form margin-auto">
+				<div class="margin-auto" ng-repeat="remboursement in remboursements">
+					<input type="text" class="form-control center-text" ng-model="remboursement.DateRemboursement">
+					<input type="number" class="form-control center-text" placeholder="Nombre de jetons" min="0" step="1" ng-model="remboursement.Montant">
+				</div>
+			</form>
+			<div class="col-md-4 margin-auto div-btn-modif-simple-plan-simuler">
+				<button ng-click="simuler()" class="btn btn-modif-simple-plan-simuler form-control">Simuler</button>
+			</div>
+		</div>
+	</div>
+</div>

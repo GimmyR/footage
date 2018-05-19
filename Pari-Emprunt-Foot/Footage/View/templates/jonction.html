@@ -1,0 +1,41 @@
+<div class="container jonction section-content">
+	<div class="row">
+		<div class="col-md-12 title-container margin-auto">
+			<h4 class="center-text"><span class="underline">Vos jonctions dans ce pari</span> :</h4>
+		</div>
+		<div class="col-md-9 table-container margin-auto" ng-repeat="jonction in jonctions">
+			<table class="table table-bordered">
+				<tr>
+					<th></th>
+					<th>Montant</th>
+					<th>Compensation</th>
+					<th ng-if="pari.typePari == 1">Ecart max</th>
+					<th ng-if="pari.typePari == 1">Ecart N</th>
+					<th ng-if="pari.typePari == 1">Montant par N ecart</th>
+				</tr>
+				<tr>
+					<td>
+						Le parieur ( <span ng-if="jonction.Pari.Pari.Client.Id == login">Vous</span>
+						<span ng-if="jonction.Pari.Pari.Client.Id != login">{{jonction.Pari.Pari.Client.Pseudo}}</span> )
+					</td>
+					<td>{{jonction.Montant}}</td>
+					<td>{{jonction.Pari.Compensation}}</td>
+					<td ng-if="pari.typePari == 1">{{jonction.Pari.EcartMax}}</td>
+					<td ng-if="pari.typePari == 1">{{jonction.Pari.Ecart}}</td>
+					<td ng-if="pari.typePari == 1">{{jonction.Pari.MontantEcart}}</td>
+				</tr>
+				<tr>
+					<td>
+						Le contre-parieur ( <span ng-if="jonction.ContrePari.Pari.Client.Id == login">Vous</span>
+						<span ng-if="jonction.ContrePari.Pari.Client.Id != login">{{jonction.ContrePari.Pari.Client.Pseudo}}</span> )
+					</td>
+					<td>{{jonction.Montant}}</td>
+					<td>{{jonction.ContrePari.Compensation}}</td>
+					<td ng-if="pari.typePari == 1">{{jonction.ContrePari.EcartMax}}</td>
+					<td ng-if="pari.typePari == 1">{{jonction.ContrePari.Ecart}}</td>
+					<td ng-if="pari.typePari == 1">{{jonction.ContrePari.MontantEcart}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

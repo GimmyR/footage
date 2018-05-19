@@ -1,0 +1,31 @@
+<div class="container voir-plan section-content">
+	<div class="row">
+		<div class="col-md-12 label-voir-plan margin-auto">
+			<h5 class="center-text"><span class="underline">Plan de remboursement</span> :</h5>
+		</div>
+		<div class="col-md-5 table-voir-plan margin-auto">
+			<table class="table table-bordered">
+				<tr>
+					<th>Date de remboursement</th>
+					<th>Montant avec interet</th>
+					<th>Fait</th>
+				</tr>
+				<tr ng-repeat="item in remboursements">
+					<td>{{item.DateRemboursement}}</td>
+					<td>{{item.Montant + item.Interet}}</td>
+					<td>
+						<span ng-if="item.Fait == 0">Non</span>
+						<span ng-if="item.Fait == 1">Oui</span>
+					</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>{{total}}</td>
+				</tr>
+			</table>
+			<div class="col-md-6 margin-auto div-btn-voir-plan-modifier">
+				<button ng-click="modifier()" class="btn btn-voir-plan-modifier form-control">Modifier</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,35 @@
+<div class="container config-pari section-content">
+	<div class="row">
+		<div class="modal-config-pari margin-auto col-md-3">
+			<form class="config-pari-form margin-auto">
+				<div class="form-group">
+					<select class="form-control center-text" ng-model="pari.typePari">
+						<option value="0">Total</option>
+						<option value="1">Quantitatif</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<select class="form-control center-text" ng-model="pari.action">
+						<option ng-repeat="item in actions" value="{{item.Id}}">{{item.Nom}}</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<select class="form-control center-text" ng-model="pari.equilibre">
+						<option value="0">Equilibre</option>
+						<option value="1">Desequilibre</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<select class="form-control center-text" ng-model="pari.regleEgalite">
+						<option value="0">Rien</option>
+						<option value="1">Le parieur gagne</option>
+						<option value="2">Le contre-parieur gagne</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<button ng-click="config()" class="btn btn-config form-control">Configurer</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+<div class="container pari-int section-content">
+	<div class="row">
+		<div class="col-md-12 title-container margin-auto">
+			<h4 class="center-text"><span class="underline">Des paris qui pourraient vous interesser</span> :</h4>
+		</div>
+		<div class="col-md-12 table-container margin-auto">
+			<table class="table table-bordered">
+				<tr>
+					<th>Client</th>
+					<th>Equipe</th>
+					<th>Compensation</th>
+					<th>Montant</th>
+					<th ng-if="pari.typePari == 1">Ecart max</th>
+					<th ng-if="pari.typePari == 1">Ecart N</th>
+					<th ng-if="pari.typePari == 1">Montant par N ecart</th>
+					<th>Regle a l'egalite</th>
+					<th></th>
+				</tr>
+				<tr ng-repeat="item in details">
+					<td>{{item.Pari.Client.Pseudo}}</td>
+					<td>{{item.Equipe.Nom}}</td>
+					<td>{{item.Compensation}}</td>
+					<td>{{item.Montant}}</td>
+					<td ng-if="pari.typePari == 1">{{item.EcartMax}}</td>
+					<td ng-if="pari.typePari == 1">{{item.Ecart}}</td>
+					<td ng-if="pari.typePari == 1">{{item.MontantEcart}}</td>
+					<td>
+						<span ng-if="item.Pari.RegleEgalite == 0">Rien</span>
+						<span ng-if="item.Pari.RegleEgalite == 1">Le parieur gagne</span>
+						<span ng-if="item.Pari.RegleEgalite == 2">Le contre-parieur gagne</span>
+					</td>
+					<td><a href="#" ng-click="rejoindre($event, item.Pari.Id)">Rejoindre</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

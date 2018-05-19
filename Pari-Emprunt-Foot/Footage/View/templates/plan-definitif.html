@@ -1,0 +1,26 @@
+<div class="container plan-definitif section-content">
+	<div class="row">
+		<div class="col-md-12 label-plan-definitif margin-auto">
+			<h5 class="center-text"><span class="underline">Plan de remboursement definitif</span> :</h5>
+		</div>
+		<div class="col-md-5 table-plan-definitif margin-auto">
+			<table class="table table-bordered">
+				<tr>
+					<th>Date de remboursement</th>
+					<th>Montant avec interet</th>
+				</tr>
+				<tr ng-repeat="item in remboursements">
+					<td>{{item.dateRemboursement}}</td>
+					<td>{{item.montant + item.interet}}</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>{{total}}</td>
+				</tr>
+			</table>
+			<div class="col-md-6 margin-auto div-btn-plan-definitif-valider">
+				<button ng-click="valider()" class="btn btn-plan-definitif-valider form-control">Valider</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\bin\Release\StatFoot.exe
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\bin\Release\StatFoot.pdb
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\StatFoot.csprojResolveAssemblyReference.cache
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\StatFoot.Properties.Resources.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewConfig.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewCoursMatch.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewEquipes.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewEquipeStat.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewFormation.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewJoueurs.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewMatch.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewMatchStat.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewMenu.resources
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\StatFoot.csproj.GenerateResource.Cache
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\StatFoot.exe
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\StatFoot.pdb
+C:\Users\Gimmy\Documents\Visual Studio 2010\Projects\StatFoot\StatFoot\obj\x86\Release\View.ViewProchainsMatchs.resources

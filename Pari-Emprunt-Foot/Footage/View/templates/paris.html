@@ -1,0 +1,30 @@
+<div class="container paris section-content">
+	<div class="row">
+		<div class="col-md-12 table-container margin-auto">
+			<table class="table table-bordered">
+				<tr>
+					<th>Equipe 1</th>
+					<th>Equipe 2</th>
+					<th>A propos de</th>
+					<th>Type du pari</th>
+					<th>Equilibre</th>
+					<th></th>
+				</tr>
+				<tr ng-repeat="item in paris">
+					<td>{{item.Partie.Equipe1.Nom}}</td>
+					<td>{{item.Partie.Equipe2.Nom}}</td>
+					<td>{{item.Action.Nom}}</td>
+					<td>
+						<span ng-if="item.TypePari == 0">Total</span>
+						<span ng-if="item.TypePari == 1">Quantitatif</span>
+					</td>
+					<td>
+						<span ng-if="item.Equilibre == 0">Oui</span>
+						<span ng-if="item.Equilibre == 1">Non</span>
+					</td>
+					<td><a href="#" ng-click="voirDetails($event, item)">Voir les details</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

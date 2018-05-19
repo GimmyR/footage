@@ -1,0 +1,31 @@
+<div class="container choix-pari section-content">
+	<div class="row">
+		<div class="modal-choix-pari margin-auto col-md-3">
+			<form class="choix-pari-form margin-auto">
+				<div class="form-group">
+					<select class="form-control center-text" ng-model="detail.equipe">
+						<option ng-repeat="item in equipes" value="{{item.Id}}">{{item.Nom}}</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<input type="number" class="form-control center-text" placeholder="Compensation" min="0" step="1" ng-model="detail.compensation">
+				</div>
+				<div class="form-group">
+					<input type="number" class="form-control center-text" placeholder="Montant" min="0" step="1" ng-model="detail.montant">
+				</div>
+				<div class="form-group" ng-if="pari.typePari == 1">
+					<input type="number" class="form-control center-text" placeholder="Ecart max" min="0" step="1" ng-model="detail.ecartMax">
+				</div>
+				<div class="form-group" ng-if="pari.typePari == 1">
+					<input type="number" class="form-control center-text" placeholder="N ecart" min="0" step="1" ng-model="detail.ecart">
+				</div>
+				<div class="form-group" ng-if="pari.typePari == 1">
+					<input type="number" class="form-control center-text" placeholder="Montant pour N ecart" min="0" step="1" ng-model="detail.montantEcart">
+				</div>
+				<div class="form-group">
+					<button ng-click="valider()" class="btn btn-choix-pari-valider form-control">Valider</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

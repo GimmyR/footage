@@ -1,0 +1,23 @@
+<div class="container emprunts section-content">
+	<div class="row">
+		<div class="col-md-12 table-container margin-auto">
+			<table class="table table-bordered">
+				<tr>
+					<th>Date de pret</th>
+					<th>Montant</th>
+					<th>Etat</th>
+					<th></th>
+				</tr>
+				<tr ng-repeat="item in emprunts">
+					<td>{{item.DatePret}}</td>
+					<td>{{item.Montant}}</td>
+					<td>
+						<span ng-if="item.Rembourse == 0">Non rembourse</span>
+						<span ng-if="item.Rembourse == 1">Rembourse</span>
+					</td>
+					<td><a href="#" ng-click="monPlan($event, item)">Voir plan</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
